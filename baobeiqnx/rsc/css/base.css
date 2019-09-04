@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    font-family: "PingFang-SC-Regular", "PingFang SC";
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #f2f2f2;
+    color: #333333;
+}
+
+img {
+    border: none;
+}
+
+/*原生input默认样式*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: #999999;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+    /* placeholder颜色  */
+    color: #999999;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    /* placeholder颜色  */
+    color: #999999;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    /* placeholder颜色  */
+    color: #999999;
+}
+
+input {
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    background: none;
+}
+
+/*滚动条默认隐藏*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*原生select默认样式*/
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    background: none;
+    border: none;
+    /*清除select默认样式*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    outline: none;
+    text-align: center;
+    padding: 0 .5rem;
+    box-sizing: border-box;
+}
+
+option::-ms-expand {
+    display: none;
+}
+
+option {
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari 和 Chrome */
+    appearance: none;
+    border: none;
+    outline: none;
+
+}
+
+/*原生textarea默认样式*/
+textarea {
+    border: none;
+    color: #333333;
+    font-family: "PingFang-SC-Regular";
+    font-size: .28rem;
+    resize: none
+}
+
+input {
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    background: none;
+}
+
+textarea {
+    outline: none;
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    　　color: #999999;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+    　　color: #999999;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    　　color: #999999;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    　　color: #999999;
+}

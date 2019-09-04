@@ -1,0 +1,140 @@
+@charset "utf-8";
+img {
+    width: 100%;
+}
+
+/*  头部 css 开始*/
+.header {
+    width: 100%;
+    height: 44px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+.header .bysf{
+    height: 44px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+.header .header-title {
+    text-align: center;
+    line-height: 44px;
+}
+
+.header .header-title span {
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    color: #333333;
+}
+
+.header .header-left-icon {
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    display: flex;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+/*  头部 css 结束*/
+
+/*  内容 css 开始*/
+.content-ul {
+    width: 100%;
+    padding-right: 0;
+}
+.content-ul .content-li {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.content-ul .content-li .content-li-left {
+    line-height: 50px;
+    margin-right: 15px;
+}
+.content-ul .content-li .content-li-left-nolh{
+    line-height: 18px;
+}
+.content-ul .content-li .content-li-left span {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #333333;
+}
+.content-ul .content-li .content-li-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-ul .content-li .content-li-input input {
+    width: 100%;
+}
+.content-ul .content-li .content-li-input-pl {
+    padding-left: 80px;
+    box-sizing: border-box;
+}
+.content-ul .content-li .content-li-input::-webkit-input-placeholder {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #AAAAAA;
+}
+.content-ul .content-li .content-li-right {
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.content-ul .content-li .content-li-right .content-li-right-icon {
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    display: flex;
+    margin-left: 2px;
+}
+
+.content-ul .content-li-auto {
+    height: auto;
+    align-items: flex-start;
+    padding: 18px 0 15px;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+}
+.content-ul .content-li-auto .content-li-list {
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.content-ul .content-li-auto .content-li-list .content-li-list-li {
+    height: 18px;
+    background: rgba(255, 103, 58, 0.10);
+    border-radius: 10px;
+    padding: 4px 6px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-ul .content-li-auto .content-li-list .content-li-list-li span {
+    font-family: PingFangSC-Regular;
+    font-size: 10px;
+    color: #FF673A;
+}
+
+/*  内容 css 结束*/
