@@ -1,0 +1,119 @@
+@charset "UTF-8";
+img {
+  width: 100%;
+  display: block;
+}
+
+/*  头部 css 开始*/
+header {
+  width: 100%;
+  height: 0.44rem;
+  background: #FFFFFF;
+  box-shadow: 0 0.02rem 0.04rem 0 rgba(0, 0, 0, 0.05);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-left-icon {
+  width: 0.28rem;
+  height: 0.28rem;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0.15rem;
+  bottom: 0;
+  margin: auto;
+}
+header .title {
+  font-family: PingFangSC-Medium;
+  font-size: 0.18rem;
+  color: #333333;
+}
+
+/*  头部 css 结束*/
+/*  内容 css 开始*/
+.content {
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+.content .input-box-list {
+  width: 100%;
+  height: auto;
+  padding-left: 0.15rem;
+  box-sizing: border-box;
+}
+.content .input-box-list .input-box-li {
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  border-bottom: 0.01rem solid #ccc;
+  padding: 0.18rem 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.content .input-box-list .input-box-li .input-box-li-left {
+  margin-right: 0.15rem;
+  display: flex;
+  align-items: center;
+}
+.content .input-box-list .input-box-li .input-box-li-left span {
+  font-family: PingFangSC-Medium;
+  font-size: 0.14rem;
+  color: #333333;
+  font-weight: bold;
+}
+.content .input-box-list .input-box-li .input-box-li-right {
+  display: flex;
+  align-items: center;
+}
+.content .input-box-list .input-box-li .input-box-li-right .landline-number {
+  padding-left: 0.71rem;
+  box-sizing: border-box;
+}
+.content .input-box-list .input-box-li .input-box-li-right input::-webkit-input-placeholder {
+  font-family: PingFangSC-Regular;
+  font-size: 0.14rem;
+  color: #AAAAAA;
+}
+.content .input-box-list .input-box-li .input-box-li-positioning {
+  position: absolute;
+  top: 0;
+  right: 0.15rem;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.content .input-box-list .input-box-li .input-box-li-positioning span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.14rem;
+  color: #333333;
+}
+.content .input-box-list .input-box-li .input-box-li-positioning .default-administrator-icon {
+  width: 0.16rem;
+  height: 0.16rem;
+  overflow: hidden;
+  display: flex;
+  margin-left: 0.02rem;
+}
+.content .input-box-list .input-box-li .input-box-li-typesof-list {
+  padding-right: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content .input-box-list .input-box-typesof {
+  align-items: flex-start;
+}
+
+/*  内容 css 结束*/
+
+/*# sourceMappingURL=entering.css.map */
