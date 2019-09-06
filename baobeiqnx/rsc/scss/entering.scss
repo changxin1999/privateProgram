@@ -4,16 +4,26 @@ img {
   display: block;
 }
 
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 /*  头部 css 开始*/
-header {
+.header {
   width: 100%;
   height: 0.44rem;
   background: #FFFFFF;
-  box-shadow: 0 0.02rem 0.04rem 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0rem 0.02rem 0.08rem 0rem rgba(211, 211, 211, 0.5);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: auto;
+  z-index: 1;
   .header-left-icon {
     width: 0.28rem;
     height: 0.28rem;
@@ -39,18 +49,18 @@ header {
   width: 100%;
   height: auto;
   background: #fff;
+  margin-top: .44rem;
   .input-box-list {
     width: 100%;
     height: auto;
     padding-left: 0.15rem;
+    margin-bottom: 0;
     box-sizing: border-box;
     .input-box-li {
       width: 100%;
-      height: auto;
+      height: .5rem;
       background: #FFFFFF;
       border-bottom: 0.01rem solid #ccc;
-      padding: 0.18rem 0;
-      box-sizing: border-box;
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -70,7 +80,11 @@ header {
         display: flex;
         align-items: center;
         input {
-
+          width: 2.7rem;
+          height: 100%;
+          font-family: PingFangSC-Regular;
+          font-size: 0.14rem;
+          color: #333333;
         }
         .landline-number {
           padding-left: 0.71rem;
@@ -88,6 +102,7 @@ header {
         right: 0.15rem;
         bottom: 0;
         margin: auto;
+        z-index: 2;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -103,17 +118,183 @@ header {
           display: flex;
           margin-left: 0.02rem;
         }
+        .address-icon {
+          width: 0.2rem;
+          height: 0.2rem;
+          overflow: hidden;
+          display: flex;
+        }
+      }
+      .input-box-li-administrator {
+        width: 1.6rem;
+        overflow: hidden;
       }
       .input-box-li-typesof-list {
-        padding-right: 15px;
+        width: 80%;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
+        li {
+          height: 0.18rem;
+          background: rgba(255, 103, 58, 0.10);
+          border-radius: 0.1rem;
+          padding: 0 0.06rem;
+          margin-right: 0.1rem;
+          margin-bottom: 0.1rem;
+          display: block;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          span {
+            font-family: PingFangSC-Regular;
+            font-size: 0.1rem;
+            color: #FF673A;
+          }
+        }
+        .active {
+          background: #FF673A;
+          span {
+            font-family: PingFangSC-Regular;
+            font-size: 0.1rem;
+            color: #FFFFFF;
+          }
+        }
+      }
+      .input-box-li-textarea {
+        width: 80%;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+        textarea {
+          width: 100%;
+          font-size: 0.14rem;
+        }
+        textarea::-webkit-input-placeholder {
+          font-family: PingFangSC-Regular;
+          font-size: 0.14rem;
+          color: #AAAAAA;
+        }
+      }
+      .input-box-li-address {
+        width: 2.5rem;
+        overflow: hidden;
       }
     }
     .input-box-typesof {
+      height: auto;
+      padding: 0.15rem 0 .05rem;
+      box-sizing: border-box;
       align-items: flex-start;
+    }
+    .input-box-textarea {
+      height: auto;
+      align-items: flex-start;
+      .input-box-li-left {
+        padding: 0.15rem 0;
+        box-sizing: border-box;
+      }
+      .input-box-li-textarea {
+        padding: 0.13rem 0;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .show-pictures-info {
+    width: 100%;
+    height: auto;
+    border-bottom: 0.01rem solid #ccc;
+    padding: .18rem .15rem .15rem;
+    box-sizing: border-box;
+    .show-pictures-info-top {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      span {
+        font-family: PingFangSC-Medium;
+        font-size: 0.14rem;
+        font-weight: bold;
+        color: #333333;
+      }
+      a {
+        font-family: PingFangSC-Regular;
+        font-size: 0.14rem;
+        color: #4A90E2;
+        margin-left: 0.05rem;
+      }
+    }
+    .show-pictures-info-img {
+      width: 100%;
+      height: 1.8rem;
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 0.06rem;
+      margin-top: .15rem;
+      overflow: hidden;
+      position: relative;
+      .delete-icon {
+        width: 0.2rem;
+        height: 0.2rem;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: auto;
+      }
+      .add-icon {
+        width: 0.48rem;
+        height: 0.48rem;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 1;
+      }
+    }
+    .show-pictures-info-list {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 0.1rem;
+      margin-bottom: 0;
+      padding-left: 0;
+      li {
+        width: 0.6rem;
+        height: 0.337rem;
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 0.06rem;
+        margin-right: 0.1rem;
+        overflow: hidden;
+        position: relative;
+        .add-icon {
+          width: 0.24rem;
+          height: 0.24rem;
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          z-index: 1;
+        }
+      }
+      .active{
+        border: 0.01rem solid #FF673A;
+      }
+      li:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
