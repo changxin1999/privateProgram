@@ -163,7 +163,11 @@
                 </div>
                 <ul class="show-pictures-info-list">
                     <li class="active">
-                        <img src="" alt="">
+                        <img class="active-img" src="" alt="">
+                        <input class="upload-input" type="file" name="fileList1"
+                               accept="image/gif, image/jpg, image/png"
+                               onchange="showImg(this)"
+                        />
                         <div class="add-icon">
                             <img src="./rsc/img/entering/add-icon.png" alt="">
                         </div>
@@ -183,14 +187,39 @@
                 </ul>
             </div>
             <div class="show-pictures-list">
-
+                <div class="show-pictures-info-top">
+                    <span>机构展示图片</span>
+                    <a>列表页</a>
+                </div>
+                <div class="show-pictures-list-img">
+                    <img src="" alt="">
+                    <div class="add-icon-box">
+                        <div class="add-icon">
+                            <img src="./rsc/img/entering/add-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="institutional-certificate">
-
+                <div class="institutional-certificate-top">
+                    <span>培训机构证件审核(仅供平台管理员审核使用)</span>
+                </div>
+                <div class="institutional-certificate-img">
+                    <div class="business-license-box">
+                        <img src="./rsc/img/entering/business-license.png" alt="">
+                    </div>
+                    <span>上传机构营业执照</span>
+                </div>
+                <div class="institutional-certificate-img">
+                    <div class="legal-person-box">
+                        <img src="./rsc/img/entering/id-card-icon.png" alt="">
+                    </div>
+                    <span>上传法人身份</span>
+                </div>
             </div>
             <div class="con-footer">
-                <p></p>
-                <p></p>
+                <p>关注平台公众号</p>
+                <p>申请结果第一时间通知你</p>
                 <div class="qr-code">
                     <img src="" alt="">
                 </div>
@@ -200,7 +229,9 @@
 
         <!--底部tab导航 start-->
         <footer>
-
+            <button type="button" class="submit">
+                <span>申请入驻</span>
+            </button>
         </footer>
         <!--底部tab导航 end-->
     </div><!--end of page-wrapper-->
@@ -219,5 +250,17 @@
 <script src="rsc/js/rem.js"></script>
 <script type="text/javascript" src="./rsc/js/default.js?018"></script>
 <script type="text/javascript" src="./rsc/js/entering.js"></script>
+<script>
+    function showImg(input) {
+        console.log(input);
+        var file = input.files[0];
+        var reader = new FileReader()
+        // 图片读取成功回调函数
+        reader.onload = function (e) {
+            document.querySelector('.active-img').src = e.target.result;
+        }
+        reader.readAsDataURL(file)
+    }
+</script>
 </body>
 </html>

@@ -4,9 +4,12 @@ img {
   display: block;
 }
 
-ul {
-  margin-bottom: 0;
-  padding-left: 0;
+.page-container {
+  padding-bottom: 0;
+}
+
+.page-wrapper {
+  max-width: none;
 }
 
 /*  头部 css 开始*/
@@ -49,6 +52,7 @@ ul {
   height: auto;
   background: #fff;
   margin-top: .44rem;
+  margin-bottom: 0.6rem;
 }
 .content .input-box-list {
   width: 100%;
@@ -279,6 +283,19 @@ ul {
   overflow: hidden;
   position: relative;
 }
+.content .show-pictures-info .show-pictures-info-list li .upload-input {
+  width: 100%;
+  height: 100%;
+  background: #F03726;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 20;
+  opacity: 0;
+}
 .content .show-pictures-info .show-pictures-info-list li .add-icon {
   width: 0.24rem;
   height: 0.24rem;
@@ -297,7 +314,176 @@ ul {
 .content .show-pictures-info .show-pictures-info-list li:last-child {
   margin-right: 0;
 }
+.content .show-pictures-list {
+  width: 100%;
+  height: auto;
+  border-bottom: 0.01rem solid #ccc;
+  padding: .18rem .15rem .15rem;
+  box-sizing: border-box;
+}
+.content .show-pictures-list .show-pictures-info-top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content .show-pictures-list .show-pictures-info-top span {
+  font-family: PingFangSC-Medium;
+  font-size: 0.14rem;
+  font-weight: bold;
+  color: #333333;
+}
+.content .show-pictures-list .show-pictures-info-top a {
+  font-family: PingFangSC-Regular;
+  font-size: 0.14rem;
+  color: #4A90E2;
+  margin-left: 0.05rem;
+}
+.content .show-pictures-list .show-pictures-list-img {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 0.06rem;
+  margin-top: .15rem;
+  overflow: hidden;
+  position: relative;
+}
+.content .show-pictures-list .show-pictures-list-img .add-icon-box {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .show-pictures-list .show-pictures-list-img .add-icon-box .add-icon {
+  width: 0.24rem;
+  height: 0.24rem;
+  overflow: hidden;
+}
+.content .institutional-certificate {
+  width: 100%;
+  height: auto;
+  border-bottom: 0.01rem solid #ccc;
+  padding: .18rem .15rem .15rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.content .institutional-certificate .institutional-certificate-top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content .institutional-certificate .institutional-certificate-top span {
+  font-family: PingFangSC-Medium;
+  font-size: 0.14rem;
+  font-weight: bold;
+  color: #333333;
+}
+.content .institutional-certificate .institutional-certificate-img {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 0.06rem;
+  padding: 0.12rem 0;
+  box-sizing: border-box;
+  margin-top: .15rem;
+  margin-right: 0.1rem;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.content .institutional-certificate .institutional-certificate-img .business-license-box {
+  width: 0.5rem;
+  height: 0.7rem;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .institutional-certificate .institutional-certificate-img .legal-person-box {
+  width: 0.8rem;
+  height: 0.56rem;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .institutional-certificate .institutional-certificate-img span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #666666;
+}
+.content .con-footer {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 0.2rem 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.content .con-footer p {
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #666666;
+}
+.content .con-footer .qr-code {
+  width: 2rem;
+  height: 2rem;
+  background: #ccc;
+  margin: 0.05rem auto 0;
+}
 
 /*  内容 css 结束*/
+/*  底部 css 开始*/
+footer {
+  width: 100%;
+  height: 0.6rem;
+  background: #fff;
+  border-top: 0.01rem solid #ccc;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .submit {
+  width: 3.45rem;
+  height: 0.4rem;
+  background: #FF673A;
+  border-radius: 0.2rem;
+  text-align: center;
+  line-height: 0.4rem;
+}
+footer .submit span {
+  font-family: PingFangSC-Medium;
+  font-size: 0.16rem;
+  color: #FFFFFF;
+}
+
+/*  底部 css 结束*/
 
 /*# sourceMappingURL=entering.css.map */
