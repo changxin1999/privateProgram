@@ -26,8 +26,9 @@
     <meta name="apple-mobile-web-app-title" content="宝贝去哪学"/>
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./rsc/css/default.css?018">
-    <link rel="stylesheet" href="./rsc/css/base.css">
-    <link rel="stylesheet" href="./rsc/scss/entering.css">
+    <link rel="stylesheet" href="./rsc/css/entering.css">
+    <!--<link rel="stylesheet" href="./rsc/scss/entering.css">-->
+
 </head>
 <body>
 <div class="page-container">
@@ -153,7 +154,11 @@
                     <a>详情页</a>
                 </div>
                 <div class="show-pictures-info-img">
-                    <img src="" alt="">
+                    <img class="show-img" src="" alt="">
+                    <input class="upload-show-input" type="file" name="fileList1"
+                           accept="image/gif, image/jpg, image/png"
+                           onchange="uploadShowImg(this)"
+                    />
                     <div class="delete-icon">
                         <img src="./rsc/img/entering/delete-icon.png" alt="">
                     </div>
@@ -166,23 +171,51 @@
                         <img class="active-img" src="" alt="">
                         <input class="upload-input" type="file" name="fileList1"
                                accept="image/gif, image/jpg, image/png"
-                               onchange="showImg(this)"
+                               onchange="updataListShowImg(this)"
                         />
                         <div class="add-icon">
                             <img src="./rsc/img/entering/add-icon.png" alt="">
                         </div>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <img class="active-img" src="" alt="">
+                        <input class="upload-input" type="file" name="fileList1"
+                               accept="image/gif, image/jpg, image/png"
+                               onchange="updataListShowImg(this)"
+                        />
+                        <div class="add-icon">
+                            <img src="./rsc/img/entering/add-icon.png" alt="">
+                        </div>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <img class="active-img" src="" alt="">
+                        <input class="upload-input" type="file" name="fileList1"
+                               accept="image/gif, image/jpg, image/png"
+                               onchange="updataListShowImg(this)"
+                        />
+                        <div class="add-icon">
+                            <img src="./rsc/img/entering/add-icon.png" alt="">
+                        </div>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <img class="active-img" src="" alt="">
+                        <input class="upload-input" type="file" name="fileList1"
+                               accept="image/gif, image/jpg, image/png"
+                               onchange="updataListShowImg(this)"
+                        />
+                        <div class="add-icon">
+                            <img src="./rsc/img/entering/add-icon.png" alt="">
+                        </div>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <img class="active-img" src="" alt="">
+                        <input class="upload-input" type="file" name="fileList1"
+                               accept="image/gif, image/jpg, image/png"
+                               onchange="updataListShowImg(this)"
+                        />
+                        <div class="add-icon">
+                            <img src="./rsc/img/entering/add-icon.png" alt="">
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -192,7 +225,11 @@
                     <a>列表页</a>
                 </div>
                 <div class="show-pictures-list-img">
-                    <img src="" alt="">
+                    <img class="img" src="" alt="">
+                    <input class="upload-input" type="file" name="fileList7"
+                           accept="image/gif, image/jpg, image/png"
+                           onchange="modifyFile(this)"
+                    />
                     <div class="add-icon-box">
                         <div class="add-icon">
                             <img src="./rsc/img/entering/add-icon.png" alt="">
@@ -206,14 +243,22 @@
                 </div>
                 <div class="institutional-certificate-img">
                     <div class="business-license-box">
-                        <img src="./rsc/img/entering/business-license.png" alt="">
+                        <img class="img" src="./rsc/img/entering/business-license.png" alt="">
                     </div>
+                    <input class="upload-input" type="file" name="fileList7"
+                           accept="image/gif, image/jpg, image/png"
+                           onchange="modifyFile(this)"
+                    />
                     <span>上传机构营业执照</span>
                 </div>
                 <div class="institutional-certificate-img">
                     <div class="legal-person-box">
-                        <img src="./rsc/img/entering/id-card-icon.png" alt="">
+                        <img class="img" src="./rsc/img/entering/id-card-icon.png" alt="">
                     </div>
+                    <input class="upload-input" type="file" name="fileList7"
+                           accept="image/gif, image/jpg, image/png"
+                           onchange="modifyFile(this)"
+                    />
                     <span>上传法人身份</span>
                 </div>
             </div>
@@ -249,18 +294,6 @@
 
 <script src="rsc/js/rem.js"></script>
 <script type="text/javascript" src="./rsc/js/default.js?018"></script>
-<script type="text/javascript" src="./rsc/js/entering.js"></script>
-<script>
-    function showImg(input) {
-        console.log(input);
-        var file = input.files[0];
-        var reader = new FileReader()
-        // 图片读取成功回调函数
-        reader.onload = function (e) {
-            document.querySelector('.active-img').src = e.target.result;
-        }
-        reader.readAsDataURL(file)
-    }
-</script>
+<script type="text/javascript" src="./rsc/js/entering.js?018"></script>
 </body>
 </html>
