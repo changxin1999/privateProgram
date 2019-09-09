@@ -315,6 +315,7 @@ img {
   color: #FFFFFF;
 }
 .content .mechanism-list .mechanism-li .mechanism-coupon li p {
+  width: 2.2rem;
   font-family: PingFangSC-Regular;
   font-size: 0.12rem;
   color: #E5A20C;
