@@ -1,43 +1,51 @@
 @charset "utf-8";
-body{background-color:#f0f0f0;}
+body {
+    background-color: #f0f0f0;
+}
+
 .page-container {
     padding-top: 0;
     padding-bottom: 68px;
     height: 100%;
 }
+
 .page-wrapper {
     max-width: 480px;
-    margin:0 auto!important;
+    margin: 0 auto !important;
     overflow: hidden;
 }
 
-.default_bg{
-	background-color:#fff;
+.default_bg {
+    background-color: #fff;
 }
 
-.border-input-edit{
-    border:1px dashed #ff9000;
+.border-input-edit {
+    border: 1px dashed #ff9000;
 }
 
-.v-center{
+.v-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.bord{height: 8px;}
+.bord {
+    height: 8px;
+}
 
-.dd-text-color{color:#f63;}
+.dd-text-color {
+    color: #f63;
+}
 
-.btn-bb{
-	color:#fff;
-	background-color:#FF673A;
-	border-color:#FF673A;
+.btn-bb {
+    color: #fff;
+    background-color: #FF673A;
+    border-color: #FF673A;
 }
 
 /*svg*/
 .i {
-    stroke:currentColor;
+    stroke: currentColor;
     stroke-width: 6.25%;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -46,52 +54,360 @@ body{background-color:#f0f0f0;}
     height: 1em;
     margin: 0.4em;
 }
+
 svg, svg symbol {
     overflow: visible;
 }
-.i-large div { font-size: 4em; margin: 0 }
-.i-medium div { font-size: 2em; margin: 0 }
-.i-small div { font-size: 1.5em; margin: 0 }
+
+.i-large div {
+    font-size: 4em;
+    margin: 0
+}
+
+.i-medium div {
+    font-size: 2em;
+    margin: 0
+}
+
+.i-small div {
+    font-size: 1.5em;
+    margin: 0
+}
 
 .i-large,
 .i-medium,
-.i-small { max-width: 50em; margin: 0 auto; }
+.i-small {
+    max-width: 50em;
+    margin: 0 auto;
+}
 
-.line{
-    border-top:1px dashed #C0C0C0;
+.line {
+    border-top: 1px dashed #C0C0C0;
 }
 
 /*tab导航*/
-.nav-foot{max-width:480px;height:50px;border-top:1px solid #f5f5f5;margin:0 auto!important; background-color:#fff;}
-.nav-foot div.active a{color:#F03726 ;}
+.nav-foot {
+    max-width: 480px;
+    height: 50px;
+    border-top: 1px solid #f5f5f5;
+    margin: 0 auto !important;
+    background-color: #fff;
+}
+
+.nav-foot div.active a {
+    color: #F03726;
+}
 
 /*bb tab导航*/
 
-.bb-nav-top{max-width:480px;height:50px;border-bottom:1px solid #f5f5f5;margin:0 auto!important; background-color:#fff;}
-.bb-nav-foot{max-width:480px;height:50px;border-top:1px solid #f5f5f5;margin:0 auto!important; background-color:#fff;}
-.bb-nav-foot div.active a{color:#F03726 ;}
+.bb-nav-top {
+    max-width: 480px;
+    height: 50px;
+    border-bottom: 1px solid #f5f5f5;
+    margin: 0 auto !important;
+    background-color: #fff;
+}
+
+.bb-nav-foot {
+    max-width: 480px;
+    height: 50px;
+    border-top: 1px solid #f5f5f5;
+    margin: 0 auto !important;
+    background-color: #fff;
+}
+
+.bb-nav-foot div.active a {
+    color: #F03726;
+}
 
 /*demo foot*/
-.demo-foot{max-width:480px;height:50px;margin:0 auto!important;}
-.demo-foot-text{
+.demo-foot {
+    max-width: 480px;
+    height: 50px;
+    margin: 0 auto !important;
+}
+
+.demo-foot-text {
     width: 200px;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    margin: 0 auto!important;
+    margin: 0 auto !important;
 }
+
 /*act edit foot*/
-.act-edit-nav-foot{max-width:480px;height:50px;border-top:1px solid #f5f5f5;margin:0 auto!important; background-color:#fff;}
+.act-edit-nav-foot {
+    max-width: 480px;
+    height: 50px;
+    border-top: 1px solid #f5f5f5;
+    margin: 0 auto !important;
+    background-color: #fff;
+}
 
-.nav-top{margin-top: 45px;}
+.nav-top {
+    margin-top: 45px;
+}
+
 /*顶部导航的banner*/
-.container1{margin: 0 auto;max-width:480px;}
-#bysf .wrapper {color:#333;}
-#bysf .col {float: left;padding: 0 0 0 0; height:50px;line-height:50px;}
+.container1 {
+    margin: 0 auto;
+    max-width: 480px;
+}
 
-#bysf .main {width: 100%;}
-#bysf .main-wrap {margin: 0 80px 0 80px;}
-#bysf .left {width: 80px;margin-left: -100%;}
-#bysf .right {width: 80px;margin-left: -80px;}
+#bysf .wrapper {
+    color: #333;
+}
 
-.clearfix::after{content: "";display:block;clear:both;visibility:hidden;height:0;overflow:hidden;}
+#bysf .col {
+    float: left;
+    padding: 0 0 0 0;
+    height: 50px;
+    line-height: 50px;
+}
+
+#bysf .main {
+    width: 100%;
+}
+
+#bysf .main-wrap {
+    margin: 0 80px 0 80px;
+}
+
+#bysf .left {
+    width: 80px;
+    margin-left: -100%;
+}
+
+#bysf .right {
+    width: 80px;
+    margin-left: -80px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+/*默认样式*/
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th {
+    text-align: left;
+    font-weight: normal;
+}
+
+html, body, fieldset, img, iframe, abbr {
+    border: 0;
+}
+
+i, cite, em, var, address, dfn {
+    font-style: normal;
+}
+
+[hidefocus], summary {
+    outline: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, small {
+    font-size: 100%;
+}
+
+sup, sub {
+    font-size: 83%;
+}
+
+pre, code, kbd, samp {
+    font-family: inherit;
+}
+
+q:before, q:after {
+    content: none;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+label, summary {
+    cursor: default;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, em, strong, b {
+    font-weight: bold;
+}
+
+del, ins, u, s, a, a:hover {
+    text-decoration: none;
+}
+
+body, textarea, input, button, select, keygen, legend {
+    font: 0.12rem/1.14 arial, \5b8b\4f53;
+    color: #333;
+    outline: 0;
+}
+
+body {
+    background: #fff;
+}
+
+a, a:hover {
+    color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.16rem;
+    font-family: "PingFang-SC-Regular", "PingFang SC";
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    background: #f2f2f2;
+    color: #333333;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+
+/*原生input默认样式*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: #999999;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+    /* placeholder颜色  */
+    color: #999999;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    /* placeholder颜色  */
+    color: #999999;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    /* placeholder颜色  */
+    color: #999999;
+}
+
+input {
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    background: none;
+}
+
+/*滚动条默认隐藏*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*原生select默认样式*/
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    background: none;
+    border: none;
+    /*清除select默认样式*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    outline: none;
+    text-align: center;
+    padding: 0 .5rem;
+    box-sizing: border-box;
+}
+
+option::-ms-expand {
+    display: none;
+}
+
+option {
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari 和 Chrome */
+    appearance: none;
+    border: none;
+    outline: none;
+
+}
+
+/*原生textarea默认样式*/
+textarea {
+    border: none;
+    color: #333333;
+    font-family: "PingFang-SC-Regular";
+    font-size: .28rem;
+    resize: none
+}
+
+input {
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    background: none;
+}
+
+textarea {
+    outline: none;
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    　　color: #999999;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+    　　color: #999999;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    　　color: #999999;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    　　color: #999999;
+}
+
