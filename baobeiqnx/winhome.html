@@ -24,98 +24,320 @@
     <meta name="apple-mobile-web-app-title" content="宝贝去哪学"/>
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./rsc/css/default.css?018">
-    <link rel="stylesheet" href="./rsc/css/base.css">
+    <link rel="stylesheet" href="./rsc/css/swiper.min.css?018">
     <link rel="stylesheet" href="./rsc/css/winhome.css?001">
+    <!--<link rel="stylesheet" href="./rsc/scss/winhome.css">-->
 </head>
+
+<script src="rsc/js/rem.js"></script>
 <body>
 <div class="page-container">
     <div class="page-wrapper">
         <!--顶部导航start-->
-        <div class="text-center bb-nav-top">
-            <div id="bysf">
-                <div class="wrapper clearfix">
-                    <div class="main col">
-                        <div class="main-wrap">
-                            宝贝去哪学
-                        </div>
-                    </div>
-                    <div class="left col text-left div-left-nav">
-                        杭州
-                    </div>
-                    <div class="right col">
-                        <a href="shopenterapply.html">入驻>></a>
-                    </div>
+        <header class="header">
+            <div class="header-address">
+                <span>杭州</span>
+                <div class="header-address-icon">
+                    <img src="./rsc/img/winhome/header-address-icon.png" alt="">
                 </div>
-            </div><!--end of bysf-->
-        </div><!--end of fixed-top-->
+            </div>
+            <div class="header-icon">
+                <img src="./rsc/img/winhome/header-icon.png" alt="">
+            </div>
+            <div class="entering-btn">
+                <span>机构入驻</span>
+            </div>
+        </header>
         <!--顶部导航end-->
         <!--内容区start-->
-        <div class="m-0">
-            <div class="container default_bg my-2">
-                <div class="row navigation" style="height:80px;">
-                    <div class="col navigation-li">
-                        <div class="navigation-icon">
-                            <img src="" alt="">
+        <div class="content">
+            <div class="navigation">
+                <ul class="navigation-ul">
+                    <li class="navigation-li">
+                        <div class="navigation-li-icon">
+                            <img src="./rsc/img/winhome/navigation-icon1.png" alt="">
                         </div>
-                        <a href="/winnearby.htm?cityId=100&workType=1">英语</a>
-                    </div>
-                    <div class="col">
-                        <a href="/winnearby.htm?cityId=100&workType=2">托班</a>
-                    </div>
-                    <div class="col">
-                        <a href="/winnearby.htm?cityId=100&workType=3">书法美术</a>
-                    </div>
-                    <div class="col">
-                        <a href="/winnearby.htm?cityId=100&workType=4">音乐舞蹈</a>
-                    </div>
-                    <div class="col">
-                        <a href="/winnearby.htm?cityId=100&workType=5">才艺益智</a>
-                    </div>
+                        <span>英语</span>
+                    </li>
+                    <li class="navigation-li">
+                        <div class="navigation-li-icon">
+                            <img src="./rsc/img/winhome/navigation-icon2.png" alt="">
+                        </div>
+                        <span>托班</span>
+                    </li>
+                    <li class="navigation-li">
+                        <div class="navigation-li-icon">
+                            <img src="./rsc/img/winhome/navigation-icon3.png" alt="">
+                        </div>
+                        <span>书法美术</span>
+                    </li>
+                    <li class="navigation-li">
+                        <div class="navigation-li-icon">
+                            <img src="./rsc/img/winhome/navigation-icon4.png" alt="">
+                        </div>
+                        <span>音乐舞蹈</span>
+                    </li>
+                    <li class="navigation-li">
+                        <div class="navigation-li-icon">
+                            <img src="./rsc/img/winhome/navigation-icon5.png" alt="">
+                        </div>
+                        <span>才艺益智</span>
+                    </li>
+                </ul>
+                <ul class="navigation-ul">
+                    <li class="navigation-li">
+                        <div class="navigation-li-icon">
+                            <img src="./rsc/img/winhome/navigation-icon6.png" alt="">
+                        </div>
+                        <span>学科辅导</span>
+                    </li>
+                    <li class="navigation-li">
+                        <div class="navigation-li-icon">
+                            <img src="./rsc/img/winhome/navigation-icon7.png" alt="">
+                        </div>
+                        <span>少儿编程</span>
+                    </li>
+                    <li class="navigation-li">
+                        <div class="navigation-li-icon">
+                            <img src="./rsc/img/winhome/navigation-icon8.png" alt="">
+                        </div>
+                        <span>运动培训</span>
+                    </li>
+                    <li class="navigation-li">
+                        <div class="navigation-li-icon">
+                            <img src="./rsc/img/winhome/navigation-icon9.png" alt="">
+                        </div>
+                        <span>留学</span>
+                    </li>
+                    <li class="navigation-li">
+                        <div class="navigation-li-icon">
+                            <img src="./rsc/img/winhome/navigation-icon10.png" alt="">
+                        </div>
+                        <span>在线教育</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner-box">
+                <div class="banner-top">
+                    <span>免费试听课</span>
                 </div>
-                <div class="row" style="height:80px;">
-                    <div class="col">
-                        <a href="/winnearby.htm?cityId=100&workType=6">学科辅导</a>
-                    </div>
-                    <div class="col">
-                        <a href="/winnearby.htm?cityId=100&workType=7">少儿编程</a>
-                    </div>
-                    <div class="col">
-                        <a href="/winnearby.htm?cityId=100&workType=8">运动培训</a>
-                    </div>
-                    <div class="col">
-                        <a href="/winnearby.htm?cityId=100&workType=9">留学</a>
-                    </div>
-                    <div class="col">
-                        <a href="/winonlineedu.htm">在线教育</a>
-                    </div>
-                </div>
-            </div><!--end of container-->
-        </div><!--end of 'm-0'-->
-        <!--内容区end-->
-
-        <!--底部tab导航 start-->
-        <div class="fixed-bottom bb-nav-foot v-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center">
-                        <a href="/winlogin.htm?tourl=%2Fwinhome.htm%3FcityId%3D100"
-                           class=" text-success text-decoration-none ">
-                            首页
-                        </a>
-                    </div>
-                    <div class="col text-center">
-                        <a href="/winlogin.htm?tourl=%2Fwinnearby.htm" class="text-secondary  text-decoration-none">
-                            附近机构
-                        </a>
-                    </div>
-                    <div class="col text-center">
-                        <a href="/winlogin.htm?tourl=%2Fwinmy.htm" class="text-secondary  text-decoration-none">
-                            我的
-                        </a>
+                <div class="banner">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="rsc/img/winhome/2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="rsc/img/winhome/1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="rsc/img/winhome/3.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
-        </div><!--end of nav-foot-->
+            <ul class="mechanism-list">
+                <div class="mechanism-top">
+                    <span>热门培训机构</span>
+                </div>
+                <li class="mechanism-li">
+                    <div class="mechanism-li-info">
+                        <div class="mechanism-li-info-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="mechanism-li-info-text">
+                            <span class="mechanism-name">
+                                新东方在线
+                            </span>
+                            <ul class="mechanism-type">
+                                <li class="mechanism-type-li">
+                                    <span>英语</span>
+                                </li>
+                                <li class="mechanism-type-li">
+                                    <span>小学语文</span>
+                                </li>
+                                <li class="mechanism-type-li">
+                                    <span>数学</span>
+                                </li>
+                                <li class="mechanism-type-li">
+                                    <span>语文</span>
+                                </li>
+                                <li class="mechanism-type-li">
+                                    <span>小学语文</span>
+                                </li>
+                                <li class="mechanism-type-li">
+                                    <span>小学语文</span>
+                                </li>
+                            </ul>
+                            <p class="mechanism-desc font-single-two">
+                                口碑好，名师多！优质课程升级，专注青少3专注青少3专注青少3专注青少3
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="mechanism-coupon">
+                        <li>
+                            <div class="less">
+                                <span>减23元</span>
+                            </div>
+                            <div class="class">
+                                <span>课</span>
+                            </div>
+                            <p class="font-single-two">
+                                49元【暑假班】小学英语提升班
+                            </p>
+                        </li>
+                        <li>
+                            <div class="less">
+                                <span>免费试听</span>
+                            </div>
+                            <div class="class">
+                                <span>课</span>
+                            </div>
+                            <p class="font-single-two">
+                                价值199元的4课时自然拼读课
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mechanism-li">
+                    <div class="mechanism-li-info">
+                        <div class="mechanism-li-info-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="mechanism-li-info-text">
+                            <span class="mechanism-name">
+                                学而思网校
+                            </span>
+                            <ul class="mechanism-type">
+                                <li class="mechanism-type-li">
+                                    <span>小学语文</span>
+                                </li>
+                                <li class="mechanism-type-li">
+                                    <span>数学</span>
+                                </li>
+                                <li class="mechanism-type-li">
+                                    <span>初高中全科</span>
+                                </li>
+                            </ul>
+                            <p class="mechanism-desc font-single-two">
+                                口碑好，名师多！优质课程升级，专注青少3…
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="mechanism-coupon">
+                        <li>
+                            <div class="less">
+                                <span>减23元</span>
+                            </div>
+                            <div class="class">
+                                <span>课</span>
+                            </div>
+                            <p class="font-single-two">
+                                49元【暑假班】小学英语提升班
+                            </p>
+                        </li>
+                        <li>
+                            <div class="less">
+                                <span>免费试听</span>
+                            </div>
+                            <div class="class">
+                                <span>课</span>
+                            </div>
+                            <p class="font-single-two">
+                                价值199元的4课时自然拼读课
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mechanism-li">
+                    <div class="mechanism-li-info">
+                        <div class="mechanism-li-info-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="mechanism-li-info-text">
+                            <span class="mechanism-name">
+                                作业帮
+                            </span>
+                            <ul class="mechanism-type">
+                                <li class="mechanism-type-li">
+                                    <span>英语</span>
+                                </li>
+                                <li class="mechanism-type-li">
+                                    <span>语文</span>
+                                </li>
+                                <li class="mechanism-type-li">
+                                    <span>数学</span>
+                                </li>
+                            </ul>
+                            <p class="mechanism-desc font-single-two">
+                                口碑好，名师多！优质课程升级，专注青少3专注青少3专注青少3专注青少3
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="mechanism-coupon">
+                        <li>
+                            <div class="less">
+                                <span>减23元</span>
+                            </div>
+                            <div class="class">
+                                <span>课</span>
+                            </div>
+                            <p class="font-single-two">
+                                49元【暑假班】小学英语提升班
+                            </p>
+                        </li>
+                        <li>
+                            <div class="less">
+                                <span>免费试听</span>
+                            </div>
+                            <div class="class">
+                                <span>课</span>
+                            </div>
+                            <p class="font-single-two">
+                                价值199元的4课时自然拼读课
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="load-more-box">
+                <div class="load-more">
+                    <span>加载更多</span>
+                </div>
+            </div>
+        </div>
+        <!--内容区end-->
+
+        <!--底部tab导航 start-->
+        <footer>
+            <div class="footer-li active">
+                <a href="#">
+                    <div class="footer-li-icon">
+                        <img src="./rsc/img/winhome/home-icon.png" alt="">
+                    </div>
+                    <span>首页</span>
+                </a>
+            </div>
+            <div class="footer-li footer-li-address">
+                <a href="#">
+                    <div class="footer-li-icon">
+                        <img src="./rsc/img/winhome/address-icon.png" alt="">
+                    </div>
+                    <span>附近机构</span>
+                </a>
+            </div>
+            <div class="footer-li">
+                <a href="#">
+                    <div class="footer-li-icon">
+                        <img src="./rsc/img/winhome/mine-icon.png" alt="">
+                    </div>
+                    <span>我的</span>
+                </a>
+            </div>
+        </footer>
         <!--底部tab导航 end-->
 
     </div><!--end of page-wrapper-->
@@ -131,6 +353,7 @@
 <script type="text/javascript"
         src="https://cdn.staticfile.org/twitter-bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
 
+<script src="rsc/js/swiper.min.js"></script>
 <script type="text/javascript" src="./rsc/js/default.js?018"></script>
 <script type="text/javascript" src="./rsc/js/winhome.js?001"></script>
 </body>

@@ -68,7 +68,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="input-box-li">
+                <li class="input-box-li input-box-li-no">
                     <div class="input-box-li-left">
                         <span>机构电话</span>
                     </div>
@@ -76,9 +76,9 @@
                         <input type="text" placeholder="手机号">
                     </div>
                 </li>
-                <li class="input-box-li">
+                <li class="input-box-li input-box-right">
                     <div class="input-box-li-right">
-                        <input class="landline-number" type="text" placeholder="座机号(选填)">
+                        <input type="text" placeholder="座机号(选填)">
                     </div>
                 </li>
                 <li class="input-box-li input-box-typesof">
@@ -129,7 +129,7 @@
                         <textarea rows="3" placeholder="请输入培训机构简介"></textarea>
                     </ul>
                 </li>
-                <li class="input-box-li">
+                <li class="input-box-li input-box-li-no">
                     <div class="input-box-li-left">
                         <span>机构地址</span>
                     </div>
@@ -142,124 +142,106 @@
                         </div>
                     </div>
                 </li>
-                <li class="input-box-li">
+                <li class="input-box-li input-box-right">
                     <div class="input-box-li-right">
                         <input class="landline-number" type="text" placeholder="X栋X室(选填)">
                     </div>
                 </li>
             </ul>
-            <div class="show-pictures-info">
-                <div class="show-pictures-info-top">
-                    <span>机构展示图片</span>
-                    <a>详情页</a>
-                </div>
-                <div class="show-pictures-info-img">
-                    <img class="show-img" src="" alt="">
-                    <input class="upload-show-input" type="file" name="fileList1"
-                           accept="image/gif, image/jpg, image/png"
-                           onchange="uploadShowImg(this)"
-                    />
-                    <div class="delete-icon">
-                        <img src="./rsc/img/entering/delete-icon.png" alt="">
+            <div class="upload-file-box">
+                <div class="show-pictures-info">
+                    <div class="show-pictures-info-top">
+                        <span>机构展示图片</span>
+                        <a>详情页</a>
                     </div>
-                    <div class="add-icon">
-                        <img src="./rsc/img/entering/add-icon.png" alt="">
-                    </div>
-                </div>
-                <ul class="show-pictures-info-list">
-                    <li class="active">
-                        <img class="active-img" src="" alt="">
-                        <input class="upload-input" type="file" name="fileList1"
+                    <div class="show-pictures-info-img">
+                        <img class="show-img" src="" alt="">
+                        <input class="upload-show-input" type="file" name="fileList1"
                                accept="image/gif, image/jpg, image/png"
-                               onchange="updataListShowImg(this)"
+                               onchange="uploadShowImg(this)"
                         />
-                        <div class="add-icon">
-                            <img src="./rsc/img/entering/add-icon.png" alt="">
+                        <div class="delete-icon">
+                            <img src="./rsc/img/entering/delete-icon.png" alt="">
                         </div>
-                    </li>
-                    <li>
-                        <img class="active-img" src="" alt="">
-                        <input class="upload-input" type="file" name="fileList1"
-                               accept="image/gif, image/jpg, image/png"
-                               onchange="updataListShowImg(this)"
-                        />
-                        <div class="add-icon">
-                            <img src="./rsc/img/entering/add-icon.png" alt="">
-                        </div>
-                    </li>
-                    <li>
-                        <img class="active-img" src="" alt="">
-                        <input class="upload-input" type="file" name="fileList1"
-                               accept="image/gif, image/jpg, image/png"
-                               onchange="updataListShowImg(this)"
-                        />
-                        <div class="add-icon">
-                            <img src="./rsc/img/entering/add-icon.png" alt="">
-                        </div>
-                    </li>
-                    <li>
-                        <img class="active-img" src="" alt="">
-                        <input class="upload-input" type="file" name="fileList1"
-                               accept="image/gif, image/jpg, image/png"
-                               onchange="updataListShowImg(this)"
-                        />
-                        <div class="add-icon">
-                            <img src="./rsc/img/entering/add-icon.png" alt="">
-                        </div>
-                    </li>
-                    <li>
-                        <img class="active-img" src="" alt="">
-                        <input class="upload-input" type="file" name="fileList1"
-                               accept="image/gif, image/jpg, image/png"
-                               onchange="updataListShowImg(this)"
-                        />
-                        <div class="add-icon">
-                            <img src="./rsc/img/entering/add-icon.png" alt="">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="show-pictures-list">
-                <div class="show-pictures-info-top">
-                    <span>机构展示图片</span>
-                    <a>列表页</a>
-                </div>
-                <div class="show-pictures-list-img">
-                    <img class="img" src="" alt="">
-                    <input class="upload-input" type="file" name="fileList7"
-                           accept="image/gif, image/jpg, image/png"
-                           onchange="modifyFile(this)"
-                    />
-                    <div class="add-icon-box">
                         <div class="add-icon">
                             <img src="./rsc/img/entering/add-icon.png" alt="">
                         </div>
                     </div>
+                    <ul class="show-pictures-info-list">
+                        <li class="active">
+                            <img class="active-img" src="" alt="">
+                            <div class="add-icon">
+                                <img src="./rsc/img/entering/add-icon.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <img class="active-img" src="" alt="">
+                            <div class="add-icon">
+                                <img src="./rsc/img/entering/add-icon.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <img class="active-img" src="" alt="">
+                            <div class="add-icon">
+                                <img src="./rsc/img/entering/add-icon.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <img class="active-img" src="" alt="">
+                            <div class="add-icon">
+                                <img src="./rsc/img/entering/add-icon.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <img class="active-img" src="" alt="">
+                            <div class="add-icon">
+                                <img src="./rsc/img/entering/add-icon.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="institutional-certificate">
-                <div class="institutional-certificate-top">
-                    <span>培训机构证件审核(仅供平台管理员审核使用)</span>
-                </div>
-                <div class="institutional-certificate-img">
-                    <div class="business-license-box">
-                        <img class="img" src="./rsc/img/entering/business-license.png" alt="">
+                <div class="show-pictures-list">
+                    <div class="show-pictures-info-top">
+                        <span>机构展示图片</span>
+                        <a>列表页</a>
                     </div>
-                    <input class="upload-input" type="file" name="fileList7"
-                           accept="image/gif, image/jpg, image/png"
-                           onchange="modifyFile(this)"
-                    />
-                    <span>上传机构营业执照</span>
-                </div>
-                <div class="institutional-certificate-img">
-                    <div class="legal-person-box">
-                        <img class="img" src="./rsc/img/entering/id-card-icon.png" alt="">
+                    <div class="show-pictures-list-img">
+                        <img class="img" src="" alt="">
+                        <input class="upload-input" type="file" name="fileList7"
+                               accept="image/gif, image/jpg, image/png"
+                               onchange="modifyFile(this)"
+                        />
+                        <div class="add-icon-box">
+                            <div class="add-icon">
+                                <img src="./rsc/img/entering/add-icon.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <input class="upload-input" type="file" name="fileList7"
-                           accept="image/gif, image/jpg, image/png"
-                           onchange="modifyFile(this)"
-                    />
-                    <span>上传法人身份</span>
+                </div>
+                <div class="institutional-certificate">
+                    <div class="institutional-certificate-top">
+                        <span>培训机构证件审核(仅供平台管理员审核使用)</span>
+                    </div>
+                    <div class="institutional-certificate-img">
+                        <div class="business-license-box">
+                            <img class="img" src="./rsc/img/entering/business-license.png" alt="">
+                        </div>
+                        <input class="upload-input" type="file" name="fileList7"
+                               accept="image/gif, image/jpg, image/png"
+                               onchange="modifyFile(this)"
+                        />
+                        <span>上传机构营业执照</span>
+                    </div>
+                    <div class="institutional-certificate-img">
+                        <div class="legal-person-box">
+                            <img class="img" src="./rsc/img/entering/id-card-icon.png" alt="">
+                        </div>
+                        <input class="upload-input" type="file" name="fileList7"
+                               accept="image/gif, image/jpg, image/png"
+                               onchange="modifyFile(this)"
+                        />
+                        <span>上传法人身份</span>
+                    </div>
                 </div>
             </div>
             <div class="con-footer">
