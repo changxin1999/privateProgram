@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15eda194-5f24-4c42-b1d3-49b94995e631" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/rsc/img/entering/business-license.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rsc/img/entering/id-card-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entering.html" beforeDir="false" afterPath="$PROJECT_DIR$/entering.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rsc/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rsc/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/css/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rsc/js/entering.js" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/js/entering.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rsc/scss/entering.css" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/scss/entering.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rsc/scss/entering.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/scss/entering.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rsc/scss/entering.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/scss/entering.scss" afterDir="false" />
-    </list>
+    <list default="true" id="15eda194-5f24-4c42-b1d3-49b94995e631" name="默认更改列表" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -62,7 +51,7 @@
     <session id="-727350021">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="5" />
           <entry key="project.opened" value="5" />
         </counts>
@@ -130,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/entering.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="33">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+              <caret line="265" column="7" lean-forward="true" selection-start-line="265" selection-start-column="7" selection-end-line="265" selection-end-column="7" />
               <folding>
                 <element signature="n#html#0;n#!!top" />
                 <element signature="n#head#0;n#html#0;n#!!top" />
@@ -436,12 +425,12 @@
       <workItem from="1567674968419" duration="5554000" />
       <workItem from="1567736359233" duration="3898000" />
       <workItem from="1567758890358" duration="5213000" />
-      <workItem from="1567841616855" duration="3928000" />
+      <workItem from="1567841616855" duration="4060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33756000" />
+    <option name="totallyTimeSpent" value="33888000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -677,7 +666,7 @@
     <entry file="file://$PROJECT_DIR$/entering.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <caret line="265" column="7" lean-forward="true" selection-start-line="265" selection-start-column="7" selection-end-line="265" selection-end-column="7" />
           <folding>
             <element signature="n#html#0;n#!!top" />
             <element signature="n#head#0;n#html#0;n#!!top" />
