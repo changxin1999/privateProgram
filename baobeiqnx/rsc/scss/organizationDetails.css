@@ -1,0 +1,579 @@
+@charset "UTF-8";
+img {
+  width: 100%;
+  display: block;
+}
+
+.page-container {
+  padding-bottom: 0;
+}
+
+.page-wrapper {
+  background: #F7F7F7;
+  max-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*  头部 css 开始*/
+.header {
+  width: 100%;
+  height: 0.44rem;
+  background: #FFFFFF;
+  box-shadow: 0 0.02rem 0.04rem 0 rgba(0, 0, 0, 0.05);
+  padding: 0 0.15rem;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.header .header-left {
+  width: 0.28rem;
+  height: 0.28rem;
+  overflow: hidden;
+}
+.header .header-title {
+  font-family: PingFangSC-Medium;
+  font-size: 0.18rem;
+  font-weight: bold;
+  color: #333333;
+}
+.header .header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .header-right .header-share-it {
+  width: 0.28rem;
+  height: 0.28rem;
+  overflow: hidden;
+}
+.header .header-right .header-more {
+  width: 0.28rem;
+  height: 0.28rem;
+  overflow: hidden;
+  margin-left: 0.1rem;
+}
+
+/*  头部 css 结束*/
+/*  内容 css 开始*/
+.content {
+  width: 100%;
+  height: auto;
+  background: #F7F7F7;
+  margin-bottom: .7rem;
+}
+.content .banner-box {
+  width: 100%;
+  height: 1.8rem;
+  background: #ccc;
+  overflow: hidden;
+}
+.content .banner-box .swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.content .banner-box .swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.content .banner-box .swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.content .banner-box .swiper-container .swiper-pagination {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.05rem;
+  margin: auto;
+}
+.content .banner-box .swiper-container .swiper-pagination span:focus {
+  outline: none;
+}
+.content .banner-box .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  width: 0.05rem;
+  height: 0.05rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.content .banner-box .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background: #FF673A;
+}
+.content .details-box {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding-left: 0.15rem;
+  margin-bottom: 0.08rem;
+  box-sizing: border-box;
+}
+.content .details-box .details-box-top {
+  width: 100%;
+  height: 0.5rem;
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content .details-box .details-box-top .details-name {
+  font-family: PingFangSC-Medium;
+  font-size: 0.2rem;
+  font-weight: bold;
+  color: #333333;
+  margin-right: 0.06rem;
+}
+.content .details-box .details-box-top .details-box-top-icon {
+  width: 0.36rem;
+  height: 0.16rem;
+  border: 0.01rem solid #FF673A;
+  border-radius: 0.03rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .details-box .details-box-top .details-box-top-icon span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.1rem;
+  color: #FF673A;
+}
+.content .details-box .details-desc {
+  width: 100%;
+  height: auto;
+  padding-right: 0.15rem;
+  box-sizing: border-box;
+  max-height: 0.51rem;
+}
+.content .details-box .details-desc p {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #666666;
+}
+.content .details-box .details-type {
+  width: 100%;
+  height: 0.48rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  border-bottom: 0.01rem solid rgba(0, 0, 0, 0.1);
+}
+.content .details-box .details-type .details-type-ul {
+  width: 3rem;
+  height: 0.48rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.content .details-box .details-type .details-type-ul .details-type-li {
+  height: 0.18rem;
+  background: rgba(255, 103, 58, 0.1);
+  border-radius: 0.1rem;
+  padding: 0 0.06rem;
+  margin-right: 0.1rem;
+  display: block;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .details-box .details-type .details-type-ul .details-type-li span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.1rem;
+  color: #FF673A;
+}
+.content .details-box .details-type .details-like {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  right: 0.15rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.content .details-box .details-type .details-like span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #999999;
+  margin-right: 0.04rem;
+}
+.content .details-box .details-type .details-like .like-icon {
+  width: 0.18rem;
+  height: 0.18rem;
+  background-image: url("../img/organizationDetails/like-icon.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.content .details-box .details-type .active span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #FF673A;
+}
+.content .details-box .details-type .active .like-icon {
+  background-image: url("../img/organizationDetails/like-active-icon.png");
+}
+.content .details-box .details-address {
+  width: 100%;
+  height: auto;
+  max-height: 0.6rem;
+  padding: 0.1rem .15rem .1rem 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .details-box .details-address .details-address-icon {
+  width: 0.18rem;
+  height: 0.18rem;
+  overflow: hidden;
+  margin-right: 0.08rem;
+}
+.content .details-box .details-address .details-address-info {
+  width: 2.94rem;
+  font-family: PingFangSC-Regular;
+  font-size: 0.14rem;
+  color: #333333;
+  line-height: .2rem;
+}
+.content .details-box .details-address .details-address-right-icon {
+  width: 0.16rem;
+  height: 0.16rem;
+  overflow: hidden;
+}
+.content .appointment-ceremony-box {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding-left: 0.15rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.content .appointment-ceremony-box .appointment-ceremony-top {
+  width: 100%;
+  height: 0.46rem;
+  padding-right: 0.15rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.content .appointment-ceremony-box .appointment-ceremony-top .appointment-ceremony-top-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content .appointment-ceremony-box .appointment-ceremony-top .appointment-ceremony-top-left .appointment-ceremony-top-left-icon {
+  width: 0.18rem;
+  height: 0.18rem;
+  overflow: hidden;
+  margin-right: 0.08rem;
+}
+.content .appointment-ceremony-box .appointment-ceremony-top .appointment-ceremony-top-left .name {
+  font-family: PingFangSC-Medium;
+  font-size: 0.16rem;
+  color: #333333;
+  font-weight: bold;
+}
+.content .appointment-ceremony-box .appointment-ceremony-top .appointment-ceremony-top-btn {
+  width: 0.68rem;
+  height: 0.26rem;
+  background: #FF673A;
+  border-radius: 0.13rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .appointment-ceremony-box .appointment-ceremony-top .appointment-ceremony-top-btn span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #FFFFFF;
+}
+.content .appointment-ceremony-box .appointment-ceremony-con-box {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-bottom: 0.01rem solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.15rem;
+  box-sizing: border-box;
+}
+.content .appointment-ceremony-box .appointment-ceremony-con-box .appointment-ceremony-con {
+  width: 3.45rem;
+  height: 0.58rem;
+  background: #FFFBF0;
+  border: 0.01rem solid rgba(229, 162, 12, 0.3);
+  padding: .1rem .1rem 0 .1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.content .appointment-ceremony-box .appointment-ceremony-con-box .appointment-ceremony-con li {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 0.1rem;
+}
+.content .appointment-ceremony-box .appointment-ceremony-con-box .appointment-ceremony-con li span {
+  font-family: PingFangSC-Medium;
+  font-size: 0.14rem;
+  font-weight: bold;
+  color: #333333;
+  margin-right: 0.08rem;
+}
+.content .appointment-ceremony-box .appointment-ceremony-con-box .appointment-ceremony-con li p {
+  flex: 1;
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #666666;
+}
+.content .coupon-box {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding-left: 0.15rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.content .coupon-box .coupon-top {
+  width: 100%;
+  height: 0.46rem;
+  padding-right: 0.15rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.content .coupon-box .coupon-top .coupon-top-left-icon {
+  width: 0.18rem;
+  height: 0.18rem;
+  overflow: hidden;
+  margin-right: 0.08rem;
+}
+.content .coupon-box .coupon-top .name {
+  font-family: PingFangSC-Medium;
+  font-size: 0.16rem;
+  color: #333333;
+  font-weight: bold;
+}
+.content .coupon-box .coupon-con-box {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-bottom: 0.01rem solid rgba(0, 0, 0, 0.1);
+  padding-right: 0.15rem;
+  box-sizing: border-box;
+}
+.content .coupon-box .coupon-con-box .coupon-ul {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li {
+  width: 100%;
+  height: 0.52rem;
+  background: #FFFBF0;
+  border: 0.01rem solid rgba(229, 162, 12, 0.3);
+  padding: .08rem .1rem;
+  margin-bottom: 0.15rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-left {
+  width: 2.5rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-left .coupon-li-price {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-left .coupon-li-price span {
+  font-family: PingFangSC-Semibold;
+  font-size: 0.14rem;
+  color: #FF673A;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-left .coupon-li-price .coupon-price {
+  margin-top: .01rem;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-left .coupon-li-price .coupon-name {
+  font-weight: bold;
+  margin-left: 0.05rem;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-left .coupon-li-desc {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #666666;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-btn {
+  width: 0.68rem;
+  height: 0.26rem;
+  background: #FF673A;
+  border-radius: 0.13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-btn span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #FFFFFF;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .buy-btn {
+  width: 0.66rem;
+}
+.content .preferential-course-box {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding-left: 0.15rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.content .preferential-course-box .preferential-course-top {
+  width: 100%;
+  height: 0.46rem;
+  padding-right: 0.15rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.content .preferential-course-box .preferential-course-top .preferential-course-icon {
+  width: 0.18rem;
+  height: 0.18rem;
+  overflow: hidden;
+  margin-right: 0.08rem;
+}
+.content .preferential-course-box .preferential-course-top .name {
+  font-family: PingFangSC-Medium;
+  font-size: 0.16rem;
+  color: #333333;
+  font-weight: bold;
+}
+.content .preferential-course-box .preferential-course-ul {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding-right: 0.15rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.content .preferential-course-box .preferential-course-ul .preferential-course-li {
+  width: 100%;
+  height: 0.6rem;
+  margin-bottom: 0.15rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content .preferential-course-box .preferential-course-ul .preferential-course-li .preferential-course-img {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: #ccc;
+  border-radius: 0.06rem;
+  margin-right: 0.1rem;
+  overflow: hidden;
+}
+.content .preferential-course-box .preferential-course-ul .preferential-course-li .preferential-course-con {
+  width: 2.5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.content .preferential-course-box .preferential-course-ul .preferential-course-li .preferential-course-con .course-name {
+  font-family: PingFangSC-Semibold;
+  font-size: 0.14rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 0.08rem;
+}
+.content .preferential-course-box .preferential-course-ul .preferential-course-li .preferential-course-con .course-desc {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #666666;
+}
+.content .preferential-course-box .preferential-course-ul .preferential-course-li .preferential-course-con .course-price-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.08rem;
+}
+.content .preferential-course-box .preferential-course-ul .preferential-course-li .preferential-course-con .course-price-box .course-price {
+  font-family: PingFangSC-Semibold;
+  font-size: 0.14rem;
+  font-weight: bold;
+  color: #FF673A;
+}
+.content .preferential-course-box .preferential-course-ul .preferential-course-li .preferential-course-con .course-price-box .original-price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 0.08rem;
+}
+.content .preferential-course-box .preferential-course-ul .preferential-course-li .preferential-course-con .course-price-box .original-price span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #666666;
+}
+.content .preferential-course-box .preferential-course-ul .preferential-course-li .preferential-course-con .course-price-box .original-price .original-price-text {
+  text-decoration: line-through;
+}
+.content .preferential-course-box .preferential-course-ul .preferential-course-li .preferential-course-icon {
+  width: 0.16rem;
+  height: 0.16rem;
+  overflow: hidden;
+}
+.content .preferential-course-box .preferential-course-ul .preferential-course-li:last-child {
+  margin-bottom: 0.08rem;
+}
+
+/*  内容 css 结束*/
+/*  底部 css 开始*/
+footer {
+  width: 100%;
+  height: 0.5rem;
+  background: #fff;
+  border-top: 0.01rem solid #ccc;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*  底部 css 结束*/
+
+/*# sourceMappingURL=organizationDetails.css.map */
