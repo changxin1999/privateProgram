@@ -74,7 +74,12 @@
                     <span class="details-name">
                         乾堂书院
                     </span>
-                    <div class="details-box-top-icon">
+                    <div class="details-box-top-icon no-active">
+                        <span>
+                            未认证
+                        </span>
+                    </div>
+                    <div class="details-box-top-icon active">
                         <span>
                             已认证
                         </span>
@@ -97,7 +102,7 @@
                             <span>初高中全科</span>
                         </div>
                     </div>
-                    <div class="details-like active">
+                    <div class="details-like">
                         <span>112</span>
                         <div class="like-icon"></div>
                     </div>
@@ -106,7 +111,7 @@
                     <div class="details-address-icon">
                         <img src="./rsc/img/organizationDetails/details-address-icon.png" alt="">
                     </div>
-                    <p class="details-address-info font-Multiline">
+                    <p class="details-address-info font-single-two">
                         杭州市 滨江区 浦沿街道 滨盛阿森 杭州市 滨江区 浦沿街道 滨盛阿森 杭州市 滨江区 浦沿街道 滨盛阿森 杭州市 滨江区 浦沿街道 滨盛阿森
                     </p>
                     <div class="details-address-right-icon">
@@ -132,7 +137,7 @@
                             <span>到店礼</span>
                             <p class="font-single-two">赠送精美毛笔一支 + 名师一对一测试</p>
                         </li>
-                        <li>
+                        <li class="audition">
                             <span>免费试听</span>
                             <p class="font-single-two">时长35分钟情棋书画茶任一课程</p>
                         </li>
@@ -243,20 +248,183 @@
                         </div>
                     </li>
                 </ul>
+                <div class="course-view-all">
+                    <div class="view-all">
+                        <span>查看全部7个课程</span>
+                    </div>
+                </div>
+            </div>
+            <div class="con-footer">
+                <p>为了更放心、更高质量的效果</p>
+                <p>请加教育质量总督导的微信</p>
+                <div class="qr-code">
+                    <img src="" alt="">
+                </div>
             </div>
         </div>
         <!--内容区end-->
 
         <!--底部tab导航 start-->
         <footer>
+            <div class="telephone-consultation">
+                <span>电话咨询</span>
+            </div>
+            <div class="make-an-appointment">
+                <span>预约试听</span>
+            </div>
         </footer>
         <!--底部tab导航 end-->
 
     </div><!--end of page-wrapper-->
 </div><!--end of page-container-->
-
 <!--弹窗start-->
+<div class="pop-window-cover">
+    <div class="audition-popup audition-popup-one">
+        <div class="audition-popup-top">
+            <span class="name">预约试听</span>
+            <div class="shut-down">
+                <span>×</span>
+            </div>
+        </div>
+        <div class="appointment-reward">
+            <div class="appointment-reward-li">
+                <div class="audition-icon">
+                    <span>预约礼</span>
+                </div>
+                <div class="audition-li-right">
+                    <span class="audition-li-name">到店礼</span>
+                    <span class="audition-li-desc font-single-two">赠送精美毛笔一支 + 名师一对一测试</span>
+                </div>
+            </div>
+            <div class="appointment-reward-li">
+                <!--<div class="audition-icon">-->
+                <!--<span>预约礼</span>-->
+                <!--</div>-->
+                <div class="audition-li-right">
+                    <span class="audition-li-name">免费试听</span>
+                    <span class="audition-li-desc font-single-two">时长35分钟情棋书画茶任一课程</span>
+                </div>
+            </div>
+        </div>
+        <div class="audition-desc">
+            <p>预约后老师将通过电话联系您</p>
+        </div>
+        <div class="audition-input">
+            <input type="number" placeholder="请输入手机号">
+        </div>
+        <div class="audition-btn">
+            <span>确认预约</span>
+        </div>
+    </div>
+    <div class="audition-popup audition-popup-two">
+        <div class="audition-popup-top">
+            <span class="name">预约试听</span>
+            <div class="shut-down">
+                <span>×</span>
+            </div>
+        </div>
+        <div class="appointment-reward">
+            <div class="appointment-reward-li">
+                <div class="audition-icon">
+                    <span>预约礼</span>
+                </div>
+                <div class="audition-li-right">
+                    <span class="audition-li-name">到店礼</span>
+                    <span class="audition-li-desc font-single-two">赠送精美毛笔一支 + 名师一对一测试</span>
+                </div>
+            </div>
+            <div class="appointment-reward-li">
+                <!--<div class="audition-icon">-->
+                <!--<span>预约礼</span>-->
+                <!--</div>-->
+                <div class="audition-li-right">
+                    <span class="audition-li-name">免费试听</span>
+                    <span class="audition-li-desc font-single-two">时长35分钟情棋书画茶任一课程</span>
+                </div>
+            </div>
+        </div>
+        <div class="audition-input-ul">
+            <div class="audition-input-li">
+                <span>孩子昵称</span>
+                <div class="audition-input-li-box">
+                    <input type="number" placeholder="请输入孩子昵称">
+                </div>
+            </div>
+            <div class="audition-input-li">
+                <span>手机号</span>
+                <div class="audition-input-li-box">
+                    <input type="number" placeholder="请输入手机号">
+                </div>
+            </div>
+        </div>
+        <div class="audition-btn">
+            <span>确认预约</span>
+        </div>
+    </div>
 
+    <div class="advisory-popup advisory-popup-one">
+        <div class="advisory-popup-top">
+            <span class="name">电话咨询</span>
+            <div class="shut-down">
+                <span>×</span>
+            </div>
+        </div>
+        <div class="advisory-desc">
+            <p>点击确定，稍后老师会联系您</p>
+        </div>
+        <div class="advisory-input">
+            <input type="number" placeholder="请输入手机号">
+        </div>
+        <div class="advisory-btn">
+            <span>确认预约</span>
+        </div>
+    </div>
+    <div class="advisory-popup advisory-popup-two">
+        <div class="advisory-popup-top">
+            <span class="name">电话咨询</span>
+            <div class="shut-down">
+                <span>×</span>
+            </div>
+        </div>
+        <div class="advisory-desc">
+            <p>点击确定，稍后老师会联系您</p>
+        </div>
+        <div class="advisory-input-ul">
+            <div class="advisory-input-li">
+                <span>孩子昵称</span>
+                <div class="advisory-input-li-box">
+                    <input type="number" placeholder="请输入孩子昵称">
+                </div>
+            </div>
+            <div class="advisory-input-li">
+                <span>手机号</span>
+                <div class="advisory-input-li-box">
+                    <input type="number" placeholder="请输入手机号">
+                </div>
+            </div>
+        </div>
+        <div class="advisory-btn">
+            <span>确认预约</span>
+        </div>
+    </div>
+</div>
+
+<!--地址弹窗-->
+<div class="address-popup">
+    <div class="address-con">
+        <div class="address-con-top">
+            <span class="title">
+                选择定位
+            </span>
+            <div class="address-shut-down">
+                <span>×</span>
+            </div>
+        </div>
+        <div class="address-list-box">
+
+        </div>
+    </div>
+</div>
 
 <!--弹窗end-->
 <!--在这里编写你的代码 end-->
