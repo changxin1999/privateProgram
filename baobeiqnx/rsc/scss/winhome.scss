@@ -78,7 +78,7 @@ img {
     width: 100%;
     height: auto;
     background: #fff;
-    padding: 0.15rem 0.19rem 0;
+    padding: 0.15rem 0.05rem 0;
     box-sizing: border-box;
     margin-bottom: 0.09rem;
     .navigation-ul {
@@ -89,16 +89,16 @@ img {
       align-items: center;
       flex-wrap: wrap;
       .navigation-li {
-        width: 0.5rem;
+        width: 20%;
         height: auto;
         margin-bottom: 0.2rem;
         text-align: center;
         .navigation-li-icon {
-          width: 100%;
+          width: .5rem;
           height: 0.5rem;
           //background: #ccc;
           overflow: hidden;
-          margin-bottom: 0.1rem;
+          margin: 0 auto 0.1rem;
         }
         span {
           font-family: PingFangSC-Medium;
@@ -160,8 +160,8 @@ img {
             outline: none;
           }
           .swiper-pagination-bullet {
-            width: 5px;
-            height: 5px;
+            width: 0.05rem;
+            height: 0.05rem;
             border-radius: 50%;
             background: rgba(0, 0, 0, 0.30);
             overflow: hidden;
@@ -275,11 +275,11 @@ img {
         box-sizing: border-box;
         li {
           width: 100%;
-          height: auto;
+          height: 0.18rem;
           display: flex;
-          justify-content: flex-start;
           align-items: center;
           margin-bottom: 0.06rem;
+          position: relative;
           .less {
             width: 0.7rem;
             height: 0.18rem;
@@ -296,27 +296,39 @@ img {
               color: #E5A20C;
             }
           }
-          .class {
-            width: 0.16rem;
-            height: 0.16rem;
-            background: #6DC70A;
-            border-radius: 0.03rem;
-            margin-right: 0.04rem;
+          .mechanism-coupon-li-right{
+            width: 2.4rem;
+            height: auto;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-            overflow: hidden;
-            span {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            .class {
+              width: 0.16rem;
+              height: 0.16rem;
+              background: #6DC70A;
+              border-radius: 0.03rem;
+              margin-right: 0.04rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              overflow: hidden;
+              span {
+                font-family: PingFangSC-Regular;
+                font-size: 0.12rem;
+                color: #FFFFFF;
+              }
+            }
+            p {
+              width: 2.2rem;
               font-family: PingFangSC-Regular;
               font-size: 0.12rem;
-              color: #FFFFFF;
+              color: #E5A20C;
             }
-          }
-          p {
-            width: 2.2rem;
-            font-family: PingFangSC-Regular;
-            font-size: 0.12rem;
-            color: #E5A20C;
           }
         }
         li:last-child {
@@ -360,7 +372,6 @@ footer {
   height: 0.5rem;
   background: #fff;
   border-top: 0.01rem solid #ccc;
-  padding: 0 0.49rem;
   box-sizing: border-box;
   position: fixed;
   left: 0;
@@ -371,7 +382,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   .footer-li {
-    width: 0.28rem;
+    width: 33%;
     height: 100%;
     padding: 0.03rem 0 0.06rem;
     box-sizing: border-box;
