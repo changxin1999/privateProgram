@@ -1,4 +1,20 @@
 $(function () {
+    // animateCSS  方法
+    function animateCSS(element, animationName, callback) {
+        const node = document.querySelector(element)
+        node.classList.add('animated', animationName)
+
+        function handleAnimationEnd() {
+            node.classList.remove('animated', animationName)
+            node.removeEventListener('animationend', handleAnimationEnd)
+
+            if (typeof callback === 'function') callback()
+        }
+
+        node.addEventListener('animationend', handleAnimationEnd)
+    }
+
+
     var swiper = new Swiper('.swiper-container', {
         observer: true,
         observeParents: true,
@@ -56,37 +72,85 @@ $(function () {
             $('.details-address-info').eq(0).removeClass('font-single-two')
         }
     }
+
     setDetailsAddressInfo(0)
 
-
-    // 电话咨询
-    $('.telephone-consultation').click(function () {
+    //预约礼 按钮  优惠卷按钮
+    $('.on-audio-visual').click(function () {
         $('.pop-window-cover').css('display', 'block')
         $('.audition-popup-one').css('display', 'block')
+        $('.audition-popup-one').addClass('animated slideInUp faster')
     })
-    // 预约试听
-    $('.make-an-appointment').click(function () {
+
+
+    // 电话咨询 按钮 点击 弹窗显示
+    $('.telephone-consultation').click(function () {
         $('.pop-window-cover').css('display', 'block')
         $('.advisory-popup-one').css('display', 'block')
+
+        $('.advisory-popup-one').addClass('animated slideInUp faster')
     })
+    //预约试听 按钮 点击 弹窗显示
+    $('.make-an-appointment').click(function () {
+        $('.pop-window-cover').css('display', 'block')
+        $('.audition-popup-one').css('display', 'block')
 
-
-    //关闭弹窗
-    $('.pop-window-cover').click(function (event) {
-        event.stopPropagation();    //  阻止事件冒泡
-        $(this).css('display', 'none')
+        $('.audition-popup-one').addClass('animated slideInUp faster')
+    })
+    // 电话咨询弹窗 按钮 点击
+    $('.audition-btn').click(function () {
         $('.audition-popup-one').css('display', 'none')
-        $('.audition-popup-two').css('display', 'none')
-        $('.advisory-popup-one').css('display', 'none')
-        $('.advisory-popup-two').css('display', 'none')
+        $('.audition-popup-two').css('display', 'block')
+
+        $('.audition-popup-two').addClass('animated slideInUp faster')
     })
-    $('.shut-down').click(function (event) {
-        event.stopPropagation();    //  阻止事件冒泡
+    // 预约试听弹窗 按钮 点击
+    $('.advisory-btn').click(function () {
+        $('.advisory-popup-one').css('display', 'none')
+        $('.advisory-popup-two').css('display', 'block')
+        $('.advisory-popup-two').addClass('animated slideInUp faster')
+    })
+
+
+    //关闭 弹窗 方法
+    function allClose() {
         $('.pop-window-cover').css('display', 'none')
         $('.audition-popup-one').css('display', 'none')
         $('.audition-popup-two').css('display', 'none')
         $('.advisory-popup-one').css('display', 'none')
         $('.advisory-popup-two').css('display', 'none')
+    }
+    //点击背景 关闭弹窗
+    $('.pop-window-cover').click(function (event) {
+        event.stopPropagation();    //  阻止事件冒泡
+        if ($('.audition-popup-one').eq(0).css('display') == 'block') {
+            animateCSS('.audition-popup-one', 'slideOutDown', allClose);
+        }
+        else if ($('.audition-popup-two').eq(0).css('display') == 'block') {
+            animateCSS('.audition-popup-two', 'slideOutDown', allClose);
+        }
+        else if ($('.advisory-popup-one').eq(0).css('display') == 'block') {
+            animateCSS('.advisory-popup-one', 'slideOutDown', allClose);
+        }
+        else if ($('.advisory-popup-two').eq(0).css('display') == 'block') {
+            animateCSS('.advisory-popup-two', 'slideOutDown', allClose);
+        }
+    })
+    //点击关闭按钮 关闭弹窗
+    $('.shut-down').click(function (event) {
+        event.stopPropagation();    //  阻止事件冒泡
+        if ($('.audition-popup-one').eq(0).css('display') == 'block') {
+            animateCSS('.audition-popup-one', 'slideOutDown', allClose);
+        }
+        else if ($('.audition-popup-two').eq(0).css('display') == 'block') {
+            animateCSS('.audition-popup-two', 'slideOutDown', allClose);
+        }
+        else if ($('.advisory-popup-one').eq(0).css('display') == 'block') {
+            animateCSS('.advisory-popup-one', 'slideOutDown', allClose);
+        }
+        else if ($('.advisory-popup-two').eq(0).css('display') == 'block') {
+            animateCSS('.advisory-popup-two', 'slideOutDown', allClose);
+        }
     })
 
     //  阻止事件冒泡
@@ -99,6 +163,10 @@ $(function () {
     })
 
 
+    // 点击地址详情拉起地址弹窗
+    $('.details-address').click(function (event) {
+        $('.address-popup').css('display', 'block')
+    })
     //地址关闭弹窗
     $('.address-popup').click(function (event) {
         event.stopPropagation();    //  阻止事件冒泡

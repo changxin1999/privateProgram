@@ -1,0 +1,621 @@
+@charset "UTF-8";
+img {
+  width: 100%;
+  display: block;
+}
+
+.page-container {
+  padding-bottom: 0;
+}
+
+.page-wrapper {
+  background: #F7F7F7;
+  max-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*  头部 css 开始*/
+.header {
+  width: 100%;
+  height: 0.44rem;
+  background: #FFFFFF;
+  box-shadow: 0 0.02rem 0.04rem 0 rgba(0, 0, 0, 0.05);
+  padding: 0 0.15rem;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.header .header-left {
+  width: 0.28rem;
+  height: 0.28rem;
+  overflow: hidden;
+}
+.header .header-title {
+  width: 30%;
+  display: block;
+  font-family: PingFangSC-Medium;
+  font-size: 0.18rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: .44rem;
+  color: #333333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+}
+.header .header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .header-right .header-share-it {
+  width: 0.28rem;
+  height: 0.28rem;
+  overflow: hidden;
+}
+.header .header-right .header-more {
+  width: 0.28rem;
+  height: 0.28rem;
+  overflow: hidden;
+  margin-left: 0.1rem;
+}
+
+/*  头部 css 结束*/
+/*  内容 css 开始*/
+.content {
+  width: 100%;
+  height: auto;
+  background: #F7F7F7;
+}
+.content .banner-box {
+  width: 100%;
+  height: 1.8rem;
+  background: #ccc;
+  overflow: hidden;
+}
+.content .banner-box .swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.content .banner-box .swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.content .banner-box .swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.content .banner-box .swiper-container .swiper-pagination {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.05rem;
+  margin: auto;
+}
+.content .banner-box .swiper-container .swiper-pagination span:focus {
+  outline: none;
+}
+.content .banner-box .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  width: 0.05rem;
+  height: 0.05rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.content .banner-box .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background: #FF673A;
+}
+.content .details-box {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding-left: 0.15rem;
+  padding-bottom: .08rem;
+  box-sizing: border-box;
+  margin-bottom: 0.08rem;
+}
+.content .details-box .details-box-top {
+  width: 100%;
+  height: 0.5rem;
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content .details-box .details-box-top .details-name {
+  font-family: PingFangSC-Medium;
+  font-size: 0.2rem;
+  font-weight: bold;
+  color: #333333;
+  margin-right: 0.06rem;
+}
+.content .details-box .details-price {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content .details-box .details-price .course-price {
+  font-family: PingFangSC-Semibold;
+  font-size: 0.14rem;
+  font-weight: bold;
+  color: #FF673A;
+}
+.content .details-box .details-price .original-price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 0.08rem;
+}
+.content .details-box .details-price .original-price span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #666666;
+}
+.content .details-box .details-price .original-price .original-price-text {
+  text-decoration: line-through;
+}
+.content .details-box .details-desc {
+  width: 100%;
+  height: auto;
+  padding-right: 0.15rem;
+  box-sizing: border-box;
+  max-height: 0.51rem;
+  margin-top: .08rem;
+}
+.content .details-box .details-desc p {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #666666;
+  line-height: 0.17rem;
+}
+.content .coupon-box {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding-left: 0.15rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.content .coupon-box .coupon-top {
+  width: 100%;
+  height: 0.46rem;
+  padding-right: 0.15rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.content .coupon-box .coupon-top .coupon-top-left-icon {
+  width: 0.18rem;
+  height: 0.18rem;
+  overflow: hidden;
+  margin-right: 0.08rem;
+}
+.content .coupon-box .coupon-top .name {
+  font-family: PingFangSC-Medium;
+  font-size: 0.16rem;
+  color: #333333;
+  font-weight: bold;
+}
+.content .coupon-box .coupon-con-box {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-bottom: 0.01rem solid rgba(0, 0, 0, 0.1);
+  padding-right: 0.15rem;
+  box-sizing: border-box;
+}
+.content .coupon-box .coupon-con-box .coupon-ul {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li {
+  width: 100%;
+  height: 0.52rem;
+  background: #FFFBF0;
+  border: 0.01rem solid rgba(229, 162, 12, 0.3);
+  padding: .08rem .1rem;
+  margin-bottom: 0.15rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-left {
+  width: 2.5rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-left .coupon-li-price {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-left .coupon-li-price span {
+  font-family: PingFangSC-Semibold;
+  font-size: 0.14rem;
+  color: #FF673A;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-left .coupon-li-price .coupon-price {
+  margin-top: .01rem;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-left .coupon-li-price .coupon-name {
+  font-weight: bold;
+  margin-left: 0.05rem;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-left .coupon-li-desc {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #666666;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-btn {
+  width: 0.68rem;
+  height: 0.26rem;
+  background: #FF673A;
+  border-radius: 0.13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .coupon-li-btn span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #FFFFFF;
+}
+.content .coupon-box .coupon-con-box .coupon-ul .coupon-li .buy-btn {
+  width: 0.66rem;
+}
+.content .address-box {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding-left: 0.15rem;
+  margin-bottom: 0.08rem;
+  box-sizing: border-box;
+}
+.content .address-box .details-type {
+  width: 100%;
+  height: 0.48rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  border-bottom: 0.01rem solid rgba(0, 0, 0, 0.1);
+}
+.content .address-box .details-type .details-name span {
+  font-family: PingFangSC-Medium;
+  font-size: 0.15rem;
+  color: #333333;
+}
+.content .address-box .details-type .details-like {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  right: 0.15rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.content .address-box .details-type .details-like span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #999999;
+  margin-right: 0.04rem;
+}
+.content .address-box .details-type .details-like .like-icon {
+  width: 0.18rem;
+  height: 0.18rem;
+  background-image: url("../img/organizationDetails/like-icon.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.content .address-box .details-type .active span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #FF673A;
+}
+.content .address-box .details-type .active .like-icon {
+  background-image: url("../img/organizationDetails/like-active-icon.png");
+}
+.content .address-box .details-address {
+  width: 100%;
+  height: auto;
+  max-height: 0.6rem;
+  padding: 0.1rem .15rem .1rem 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .address-box .details-address .details-address-icon {
+  width: 0.18rem;
+  height: 0.18rem;
+  overflow: hidden;
+  margin-right: 0.08rem;
+}
+.content .address-box .details-address .details-address-info {
+  width: 2.94rem;
+  font-family: PingFangSC-Regular;
+  font-size: 0.14rem;
+  color: #333333;
+  line-height: .2rem;
+}
+.content .address-box .details-address .details-address-right-icon {
+  width: 0.16rem;
+  height: 0.16rem;
+  overflow: hidden;
+}
+.content .con-footer {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 0.2rem 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 0.08rem;
+}
+.content .con-footer p {
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #666666;
+  line-height: 0.17rem;
+}
+.content .con-footer .qr-code {
+  width: 2rem;
+  height: 2rem;
+  background: #ccc;
+  margin: 0.05rem auto 0;
+}
+.content .baby-classroom {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: .18rem .15rem .15rem 0.15rem;
+  box-sizing: border-box;
+  margin-bottom: .8rem;
+  overflow: hidden;
+}
+.content .baby-classroom .baby-classroom-title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .baby-classroom .baby-classroom-title span {
+  font-family: PingFangSC-Medium;
+  font-size: 0.14rem;
+  font-weight: bold;
+  color: #333333;
+}
+.content .baby-classroom .baby-classroom-img {
+  width: 100%;
+  height: 2rem;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 0.06rem;
+  margin-top: .15rem;
+  overflow: hidden;
+  position: relative;
+}
+.content .baby-classroom .baby-classroom-img .add-icon-box {
+  width: 1rem;
+  height: 1rem;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .baby-classroom .baby-classroom-img .add-icon-box .add-icon {
+  width: 0.24rem;
+  height: 0.24rem;
+  overflow: hidden;
+}
+.content .baby-classroom .baby-classroom-img .upload-input {
+  width: 100%;
+  height: 100%;
+  background: #4A90E2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 20;
+  opacity: 0;
+}
+
+/*  内容 css 结束*/
+/*  底部 css 开始*/
+footer {
+  width: 100%;
+  height: 0.6rem;
+  background: #fff;
+  border-top: 0.01rem solid #ccc;
+  padding: 0 0.15rem;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .price-text {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .price-text span {
+  font-family: PingFangSC-Medium;
+  font-size: 0.2rem;
+  color: #FF673A;
+}
+footer .price-text .price {
+  text-decoration: line-through;
+}
+footer .price-text .reduce-box {
+  height: 0.16rem;
+  border: 0.01rem solid #FF673A;
+  border-radius: 0.03rem;
+  padding: 0 0.03rem;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 0.1rem;
+  margin-left: .1rem;
+}
+footer .price-text .reduce-box span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.1rem;
+  color: #FF673A;
+}
+footer .purchase-btn {
+  width: 1.66rem;
+  height: 0.4rem;
+  background: #FF673A;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .purchase-btn span {
+  font-family: PingFangSC-Medium;
+  font-size: 0.16rem;
+  color: #FFFFFF;
+}
+
+/*  底部 css 结束*/
+.course-details-pop {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  z-index: 999;
+  overflow: hidden;
+  display: none;
+}
+.course-details-pop .course-details {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-top-left-radius: 0.15rem;
+  border-top-right-radius: 0.15rem;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+}
+.course-details-pop .course-details .course-details-top {
+  width: 100%;
+  height: 0.58rem;
+  background: #fff;
+  padding: 0 0.15rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.course-details-pop .course-details .course-details-top .name {
+  font-family: PingFangSC-Medium;
+  font-size: 0.18rem;
+  font-weight: bold;
+  color: #333333;
+}
+.course-details-pop .course-details .course-details-top .shut-down {
+  width: 0.2rem;
+  height: 0.2rem;
+  position: absolute;
+  right: .15rem;
+  top: .15rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-details-pop .course-details .course-details-ul {
+  width: 100%;
+  height: auto;
+  padding: 0 0.15rem;
+  box-sizing: border-box;
+  margin-bottom: 0.7rem;
+}
+.course-details-pop .course-details .course-details-ul li {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: .1rem;
+}
+.course-details-pop .course-details .course-details-ul li span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.16rem;
+  color: #666666;
+}
+.course-details-pop .course-details .course-details-ul li p {
+  font-family: PingFangSC-Regular;
+  font-size: 0.14rem;
+  color: #666666;
+}
+.course-details-pop .course-details .course-details-btn {
+  width: 3.45rem;
+  height: 0.4rem;
+  background: #FF673A;
+  border-radius: 0.2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.1rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-details-pop .course-details .course-details-btn span {
+  font-family: PingFangSC-Medium;
+  font-size: 0.16rem;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=detailsHomepage.css.map */

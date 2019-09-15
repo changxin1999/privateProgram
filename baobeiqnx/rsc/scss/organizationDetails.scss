@@ -33,10 +33,21 @@ img {
     overflow: hidden;
   }
   .header-title {
+    width: 30%;
+    display: block;
     font-family: PingFangSC-Medium;
     font-size: 0.18rem;
     font-weight: bold;
+    text-align: center;
+    line-height: .44rem;
     color: #333333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
   }
   .header-right {
     display: flex;
@@ -129,10 +140,10 @@ img {
         margin-right: 0.06rem;
       }
       .details-box-top-icon {
-        width: 0.36rem;
         height: 0.16rem;
         border: 0.01rem solid #AAAAAA;
         border-radius: 0.03rem;
+        padding: 0 0.03rem;
         box-sizing: border-box;
         text-align: center;
         line-height: 0.1rem;
@@ -162,6 +173,7 @@ img {
         font-family: PingFangSC-Regular;
         font-size: 0.12rem;
         color: #666666;
+        line-height: 0.17rem;
       }
     }
     .details-type {
@@ -319,7 +331,7 @@ img {
       box-sizing: border-box;
       .appointment-ceremony-con {
         width: 3.45rem;
-        height: 0.58rem;
+        height: auto;
         background: #FFFBF0;
         border: 0.01rem solid rgba(229, 162, 12, 0.30);
         padding: .1rem .1rem 0 .1rem;
@@ -347,8 +359,14 @@ img {
             color: #666666;
           }
         }
-        .audition{
-
+        .audition {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-wrap: nowrap;
+          p {
+           line-height: 0.17rem;
+          }
         }
       }
     }
@@ -603,6 +621,7 @@ img {
       font-family: PingFangSC-Regular;
       font-size: 0.12rem;
       color: #666666;
+      line-height: 0.17rem;
     }
     .qr-code {
       width: 2rem;
@@ -1026,6 +1045,7 @@ footer {
     display: none;
   }
 }
+
 //弹窗start结束
 
 //地址弹窗 结束
@@ -1086,4 +1106,5 @@ footer {
     }
   }
 }
+
 //地址弹窗 开始
