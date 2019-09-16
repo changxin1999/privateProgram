@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15eda194-5f24-4c42-b1d3-49b94995e631" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/rsc/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rsc/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rsc/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rsc/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rsc/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rsc/img/organizationDetails/audition-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organizationDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/organizationDetails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rsc/js/organizationDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/js/organizationDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rsc/scss/organizationDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/scss/organizationDetails.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rsc/scss/organizationDetails.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/scss/organizationDetails.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rsc/scss/organizationDetails.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/scss/organizationDetails.scss" afterDir="false" />
-    </list>
+    <list default="true" id="15eda194-5f24-4c42-b1d3-49b94995e631" name="默认更改列表" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -131,8 +118,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/organizationDetails.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+            <state relative-caret-position="66">
+              <caret line="440" lean-forward="true" selection-start-line="440" selection-end-line="440" />
               <folding>
                 <element signature="n#html#0;n#!!top" />
                 <element signature="n#head#0;n#html#0;n#!!top" />
@@ -635,15 +622,15 @@
       <workItem from="1568109979072" duration="151000" />
       <workItem from="1568110834271" duration="7830000" />
       <workItem from="1568167452651" duration="4000" />
-      <workItem from="1568268828921" duration="13170000" />
+      <workItem from="1568268828921" duration="13769000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62211000" />
+    <option name="totallyTimeSpent" value="62810000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22060767" />
@@ -1095,8 +1082,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/organizationDetails.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        <state relative-caret-position="66">
+          <caret line="440" lean-forward="true" selection-start-line="440" selection-end-line="440" />
           <folding>
             <element signature="n#html#0;n#!!top" />
             <element signature="n#head#0;n#html#0;n#!!top" />
