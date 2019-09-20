@@ -132,7 +132,9 @@ img {
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      overflow: hidden;
       .details-name {
+        max-width: 80%;
         font-family: PingFangSC-Medium;
         font-size: 0.2rem;
         font-weight: bold;
@@ -543,9 +545,11 @@ img {
             margin-bottom: 0.08rem;
           }
           .course-desc {
+            height: 0.13rem;
             font-family: PingFangSC-Regular;
             font-size: 0.12rem;
             color: #666666;
+            overflow: hidden;
           }
           .course-price-box {
             width: 100%;
